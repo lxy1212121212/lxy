@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登陆界面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+        background-size: cover;
+      }
+      .login {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 7),
+          rgba(255, 255, 255, 5),
+          rgba(255, 255, 255, 4)
+        );
+        /* 使背景模糊化*/
+        box-shadow: 0 0 20px #196077;
+      }
+      .table {
+        font: 900 40px "";
+        text-align: center;
+        letter-spacing: 5px;
+        color: rgb(249, 147, 24);
+      }
+      .box {
+        overflow: hidden;
+      }
+      .box input {
+        width: 100%;
+        margin-bottom: 20px;
+        outline: none;
+        border: 0;
+        padding: 10px;
+        background-color: transparent;
+        border-bottom: 3px solid rgb(150 150 250);
+        font: 900 16px "";
+      }
+      .go {
+        text-align: center;
+        display: block;
+        height: 24px;
+        padding: 12px;
+        font: 900 20px "";
+        border-radius: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        letter-spacing: 3px;
+        background-image: linear-gradient(to left, #fd79a8, #a29bf6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="box">
+        <p class="table">Login</p>
+        <br />
+        <input type="text" placeholder="账号" value="123456789" />
+        <input type="password" placeholder="密码" value="123456789" />
+        <br />
+        <a class="go" href="#">Go</a>
+        <a
+          class="go"
+          href="https://lxy1212121212.github.io/lxy/xin"
+          target="_blank"
+          >个人主页</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
