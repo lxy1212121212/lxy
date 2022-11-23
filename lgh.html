@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>沐益</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .yingyin {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .v1 {
+        width: 240px;
+        background-color: white;
+      }
+      .v2 {
+        height: 60px;
+        text-align: center;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .v3 {
+        flex: 3;
+      }
+      .v4 {
+        height: 100px;
+      }
+      .v5 {
+        height: 160px;
+      }
+      .v6 {
+        flex: 1;
+      }
+      .v7 {
+        height: 150px;
+      }
+      .v8 {
+        height: 300px;
+      }
+      .ma8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .neirong {
+        overflow: auto;
+      }
+      .z2 {
+        z-index: 2;
+      }
+      .touxiang {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #999;
+      }
+      .jiange {
+        margin-left: 10px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 14px;
+        color: rgb(99, 99, 99);
+      }
+
+      /* 当屏幕宽度小于600px时应用此css */
+      /* 手机端css全名*/
+      @media (max-width: 600px) {
+        .cebianlan {
+          display: none;
+        }
+        .neirongqu {
+          flex-direction: column;
+        }
+        .shujuqu {
+          flex-direction: column;
+        }
+        .youqu {
+          margin-left: 8px;
+        }
+        .shujukuai {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neirong::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--注释：侧边栏-->
+    <div class="v1 z2 cebianlan">
+      <!--头像栏-->
+      <div class="flex touxiang">
+        <img
+          src="IMG_20181105_171641.jpg"
+          width="40px"
+          height="40px"
+          alt="muyi"
+        />
+        <div class="jiange">沐益</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div class="v2 baiSe z2">你好阿，哈哈哈</div>
+      <!--内容区-->
+      <div class="flex1 flex neirong neirongqu">
+        <!--左区-->
+        <div class="flex column v3 ma8">
+          <!--数据区-->
+          <div class="flex shujuqu">
+            <!--数据块-->
+            <div class="baiSe flex1 mgr8 v4 yingyin shujukuai">2</div>
+            <div class="baiSe flex1 mgr8 v4 yingyin shujukuai">2</div>
+            <div class="baiSe flex1 mgr8 v4 yingyin shujukuai">2</div>
+            <div class="baiSe flex1 v4 yingyin shujukuai">2</div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+            <div class="baiSe v5 mgt8 yingyin">3</div>
+          </div>
+        </div>
+        <!--右区-->
+        <div class="v6 flex column mgr8 mgt8 youqu">
+          <!--提示区-->
+          <div class="v7 baiSe yingyin">4</div>
+          <!--消息区-->
+          <div class="v8 baiSe mgt8 yingyin">4</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

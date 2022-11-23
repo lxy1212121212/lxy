@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #eee;
+}
+/* * {
+        border: 1px solid black;
+      } */
+.yingyin {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+.flex {
+  display: flex;
+}
+.baiSe {
+  background-color: white;
+}
+.v1 {
+  width: 240px;
+  background-color: white;
+}
+.v2 {
+  height: 60px;
+  text-align: center;
+}
+.flex1 {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.v3 {
+  flex: 3;
+}
+.v4 {
+  height: 100px;
+}
+.v5 {
+  height: 160px;
+}
+.v6 {
+  flex: 1;
+}
+.v7 {
+  height: 150px;
+}
+.v8 {
+  height: 300px;
+}
+.ma8 {
+  margin: 8px;
+}
+.mgr8 {
+  margin-right: 8px;
+}
+.mgt8 {
+  margin-top: 8px;
+}
+.neirong {
+  overflow: auto;
+}
+.z2 {
+  z-index: 2;
+}
+.touxiang {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #999;
+}
+.jiange {
+  margin-left: 10px;
+}
+.daohang {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  font-size: 14px;
+  color: rgb(99, 99, 99);
+}
+
+/* 当屏幕宽度小于600px时应用此css */
+/* 手机端css全名*/
+@media (max-width: 600px) {
+  .cebianlan {
+    display: none;
+  }
+  .neirongqu {
+    flex-direction: column;
+  }
+  .shujuqu {
+    flex-direction: column;
+  }
+  .youqu {
+    margin-left: 8px;
+  }
+  .shujukuai {
+    margin: 0 0 8px;
+    flex: auto;
+  }
+}
+.neirong::-webkit-scrollbar {
+  display: none;
+}
