@@ -33,8 +33,10 @@
       <p></p>
     </div>
     <div class="v6">
-      <h1>文本区</h1>
-      <p>不好意思哈，目前啥都还没有^_^</p></div>
+      <h1 >文本区</h1>
+      <br/>
+      <p>不好意思哈，目前啥都还没有^_^</p>
+    </div>
     <iframe
       src="#"
       width="200px"
@@ -97,14 +99,18 @@
       }
       .v6 {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
         height: 600px;
         border-radius: 10px;
         background: #666;
         margin-top: 20px;
         padding-top: 10px;
         color: white;
+        overflow: auto;
       }
+      .v6::-webkit-scrollbar {
+        display: none;
       .v7 {
         margin: 25px 0 5px 0;
         background: transparent;
