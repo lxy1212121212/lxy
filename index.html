@@ -8,15 +8,14 @@
   </head>
   <body>
     <div class="v9">
-     
-        <a class="v5" href="https://lxy1212121212.github.io/lxy/lgh"
-         >
+      <a class="v5" href="https://lxy1212121212.github.io/lxy/lgh">
         <img src="lgh123.jpg" alt="lgh" width="80px" height="80px" />
-          </a>
-      
+      </a>
     </div>
-    <div class="v1 v2">
-      <p>文本居中</p>
+    <div class="flex flex1">
+      <div class="v1 flex flex1">卡片1</div>
+      <div class="v2 flex flex1">卡片2</div>
+      <div class="v11 flex flex1">卡片3</div>
     </div>
     <div class="v3 v4">
       <p>嗨</p>
@@ -29,30 +28,30 @@
       <p></p>
     </div>
     <div class="v6">
-      <h1 >文本区</h1>
-      <br/>
+      <h1>文本区</h1>
+      <br />
       <p>不好意思哈，目前啥都还没有^_^</p>
     </div>
-    
-    <div class="v7">
+
+    <div class="v10">
       <iframe
-      src="#"
-      width="200px"
-      height="200px"
-      frameborder="0"
-      name="frame_a"
-    >
+        src="#"
+        width="200px"
+        height="200px"
+        frameborder="0"
+        name="frame_a"
+      >
       </iframe>
     </div>
-     <div class="v9">
-        <a 
-          class="v8"
-          href="https://lxy1212121212.github.io/lxy/lgh"
-          target="frame_a"
-          rel="noopener"
-        >
-          我的首页
-        </a>
+    <div class="v9">
+      <a
+        class="v8"
+        href="https://lxy1212121212.github.io/lxy/lgh"
+        target="frame_a"
+        rel="noopener"
+      >
+        我的首页
+      </a>
     </div>
     <style>
       body {
@@ -63,17 +62,41 @@
       body::-webkit-scrollbar {
         display: none;
       }
-      .v1 {
+      .flex {
         display: flex;
-        flex-direction: column;
-
-        text-align: center;
-        background: white;
-        border-radius: 10px;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .v1 {
+        background: #999;
+        height: 100px;
+        overflow: auto;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 10px 0 10px;
+        color: #fff;
       }
       .v2 {
-        font-size: 25px;
-        color: rgb(125, 12, 231);
+        background: #999;
+        height: 100px;
+        overflow: auto;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 10px 0 10px;
+        color: #fff;
+      }
+      .v11 {
+        background: #999;
+        height: 100px;
+        overflow: auto;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 10px 0 10px;
+        color: #fff;
       }
       .v3 {
         display: flex;
@@ -103,7 +126,7 @@
         height: 600px;
         border-radius: 10px;
         background: #666;
-        margin-top: 20px;
+        margin: 20px 0 20px 0;
         padding-top: 10px;
         color: white;
         overflow: auto;
@@ -114,26 +137,21 @@
       .v7 {
         margin: 25px 0 5px 0;
         background: transparent;
-        border-radius: 5px;
         text-align: center;
-        padding-top: 30px;
         height: 50px;
+      }
+      .v8 {
         text-decoration: none;
       }
-      .v8{
-      
-        margin: 25px 0 5px 0;
-        background: transparent;
-        border-radius: 5px;
+      .v9 {
+        display: flex;
+        justify-content: center;
         text-align: center;
-        padding-top: 30px;
-        height: 50px;
-        text-decoration: none;
-        
-        }
-      .v9{
-        display:flex;
-        flex-direction: column;
+        margin-top: 10px;
+      }
+      .v10 {
+        display: flex;
+        justify-content: center;
         align-items: center;
       }
     </style>
