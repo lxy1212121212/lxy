@@ -30,12 +30,11 @@ body::-webkit-scrollbar {
 .v1 a {
   color: #fff;
 }
-.v1:hover {
-  background: rgb(115, 40, 40);
+.v1 a:hover {
+  color: rgb(115, 40, 40);
 }
 .quxiahua {
   text-decoration: none;
-  color: hwb(191 0% 0%);
 }
 .v2 {
   background: #999;
@@ -127,3 +126,4 @@ body::-webkit-scrollbar {
     flex-direction: column;
   }
 }
+
