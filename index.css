@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
   text-align: center;
   height: 80px;
 }
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   .ni {
     display: none;
   }
